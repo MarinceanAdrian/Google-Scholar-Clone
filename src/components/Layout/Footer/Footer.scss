@@ -1,0 +1,17 @@
+@import "../../../globalStyles/vars";
+@import "../../../globalStyles/utils";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  padding: 0.7rem 1.5rem;
+  @include flex(space-between);
+  background-color: $footerColor;
+  color: $footerTextColor;
+
+  &__readings {
+    @include flex(space-evenly);
+    gap: 1rem;
+  }
+}

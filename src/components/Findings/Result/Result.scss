@@ -1,0 +1,17 @@
+@import "../../../globalStyles/vars";
+
+.findings__section--item {
+  margin-bottom: 2rem;
+  width: 40rem;
+}
+
+.findings__abstract {
+  font-size: 0.8rem;
+}
+.findings__authors {
+  color: $authorsGreen;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}

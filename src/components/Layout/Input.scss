@@ -1,0 +1,29 @@
+@import "../../globalStyles/vars";
+@import "../../globalStyles/utils";
+
+.landing__form {
+  width: 650px;
+  min-width: 85%;
+  max-width: 90%;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.findings__form {
+  width: 600px;
+  position: absolute;
+  top: 13px;
+  left: 260px;
+}
+
+button {
+  .fa-magnifying-glass {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    place-items: center;
+    font-size: 1rem;
+  }
+}

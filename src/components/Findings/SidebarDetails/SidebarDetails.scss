@@ -1,0 +1,31 @@
+.findings--secondary-nav {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.secondary__nav--icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+
+  span {
+    color: #7a6866;
+    font-size: 1.2rem;
+  }
+}
+
+.secondary__nav--icon {
+  width: 2rem;
+  display: inline-block;
+}
+
+// RESULTS
+.secondary__nav--results {
+  color: #7a6866;
+  font-size: 0.955rem;
+  margin-left: 7rem;
+}

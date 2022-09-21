@@ -1,0 +1,40 @@
+@import "../../globalStyles/vars";
+@import "../../globalStyles/utils";
+
+.nav {
+  padding: 1.2rem 1.2rem;
+  width: 100vw;
+  z-index: 1;
+  @include flex(space-between);
+  position: relative;
+
+  &__options {
+    @include flex(space-around);
+    gap: 1rem;
+  }
+}
+
+.fa-bars {
+  padding-right: 0.5rem;
+
+  &:hover {
+    color: $iconHoverColor;
+  }
+}
+
+.fa-user {
+  font-size: 1.6rem;
+}
+
+// hover
+.nav__options--icon {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+
+    i {
+      color: $iconHoverColor;
+    }
+  }
+}

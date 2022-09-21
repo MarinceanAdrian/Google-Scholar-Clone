@@ -1,0 +1,55 @@
+@import "../../globalStyles/vars";
+@import "../../globalStyles/utils";
+
+@mixin navPadding() {
+  padding: 1.5rem;
+}
+
+.sidebar {
+  // opacity: 10 !important;
+  // pointer-events: all !important;
+  position: fixed;
+  height: 100vh;
+  width: 15rem;
+  border-right: $customBorder;
+  box-shadow: 2px 2px 4px rgba($iconColor, 0.2);
+  z-index: 5;
+  transform: translateX(-150%);
+  background: white;
+  transition: all 0.2s ease-out;
+
+  &__header {
+    @include flex(space-between);
+    gap: 1rem;
+    @include navPadding();
+    border-bottom: $customBorder;
+  }
+
+  &__list-item {
+    cursor: pointer;
+    padding: 1rem 1rem 1rem 1.5rem;
+
+    &:hover {
+      background: $sidebarHoverColor;
+    }
+  }
+  .advanced {
+    border-top: $customBorder;
+    border-bottom: $customBorder;
+  }
+  span {
+    padding-left: 1.3rem;
+    text-transform: capitalize;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  margin-bottom: -0.2rem;
+  img {
+    width: 10rem;
+  }
+}
+.sidebar.active {
+  transform: translateX(0);
+}

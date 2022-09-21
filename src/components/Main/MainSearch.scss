@@ -1,0 +1,36 @@
+@import "../../globalStyles/vars";
+@import "../../globalStyles/utils";
+
+.landing {
+  margin-top: -5rem;
+  @include flex(space-around);
+  flex-direction: column;
+  margin: 4rem auto;
+  max-width: 90%;
+
+  &__logo {
+    width: 25rem;
+    margin-bottom: 1rem;
+  }
+
+  &__options {
+    margin-bottom: 3.5rem;
+    @include flex(space-evenly);
+    gap: 1.6rem;
+    // width: 400px;
+
+    small {
+      margin-left: -1.6rem;
+    }
+
+    input {
+      margin: 0;
+    }
+  }
+
+  &__motto {
+    color: #006621;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
